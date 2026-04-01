@@ -7,7 +7,7 @@
 
 @layer base {
   body {
-    @apply bg-white text-slate-900 antialiased;
+    @apply bg-[#fdfcf9] text-slate-900 antialiased;
     background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
     background-attachment: fixed;
   }

@@ -4,9 +4,9 @@ import { motion } from 'motion/react';
 
 export const Footer: React.FC = () => {
   return (
-    <section className="relative w-full h-screen flex flex-col items-center justify-center overflow-hidden px-6">
+    <section className="relative w-full h-screen flex flex-col items-center justify-center overflow-hidden px-6 bg-[#fdfcf9]">
       {/* Background Spline Placeholder */}
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 -z-10 opacity-40">
         <SplinePlaceholder label="Footer 3D Scene" className="rounded-none border-none opacity-40" />
       </div>
 
@@ -29,7 +29,7 @@ export const Footer: React.FC = () => {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="px-10 py-4 bg-slate-900 text-white rounded-full font-medium tracking-wide shadow-xl shadow-slate-200 hover:bg-slate-800 transition-colors"
+          className="px-10 py-5 bg-slate-900 text-white rounded-full font-bold tracking-wide shadow-2xl shadow-slate-200 hover:bg-slate-800 transition-colors uppercase text-sm tracking-[0.2em]"
         >
           Get Started Now
         </motion.button>

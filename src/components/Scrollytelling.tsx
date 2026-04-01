@@ -125,13 +125,13 @@ export const Scrollytelling: React.FC = () => {
   }, { scope: containerRef });
 
   return (
-    <div ref={containerRef} className="relative w-full h-screen overflow-hidden bg-white">
+    <div ref={containerRef} className="relative w-full h-screen overflow-hidden bg-[#fdfcf9]">
       {/* Background Subtle Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-50/50 to-transparent pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-100/50 to-transparent pointer-events-none" />
       
       <div className="relative z-10 w-full h-full flex items-center justify-center px-8 md:px-24">
         
-        {/* Scrolly Video Asset */}
+        {/* Scrolly Video Asset - Seamless Watercolor Integration */}
         <div 
           ref={assetRef}
           className="absolute w-full max-w-2xl aspect-square z-20 flex items-center justify-center drop-shadow-2xl"
@@ -144,7 +144,7 @@ export const Scrollytelling: React.FC = () => {
             playsInline
             preload="auto"
             className="w-full h-full object-contain mix-blend-multiply transition-all duration-700"
-            style={{ filter: 'contrast(1.05) brightness(1.01)' }}
+            style={{ filter: 'contrast(1.05) brightness(1.02)' }}
           />
         </div>
 

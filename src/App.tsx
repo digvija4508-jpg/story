@@ -9,7 +9,7 @@ import { Footer } from './components/Footer';
 
 export default function App() {
   return (
-    <main className="w-full bg-white selection:bg-slate-900 selection:text-white">
+    <main className="w-full bg-[#fdfcf9] selection:bg-slate-900 selection:text-white">
       <Hero />
       <Scrollytelling />
       <Footer />
