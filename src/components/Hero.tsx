@@ -10,7 +10,7 @@ export const Hero: React.FC = () => {
       {/* Cinematic Background: Spline 3D Model (White Background version) */}
       <div className="absolute inset-0 z-0">
         <div 
-          className="w-full h-full opacity-40 scale-105 pointer-events-none"
+          className="w-full h-full opacity-40 scale-105"
           style={{
             maskImage: 'radial-gradient(circle at center, black 20%, transparent 80%)',
             WebkitMaskImage: 'radial-gradient(circle at center, black 20%, transparent 80%)',
@@ -28,13 +28,13 @@ export const Hero: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-[#fdfcf9]/80 via-transparent to-[#fdfcf9] pointer-events-none" />
       </div>
       
-      {/* Centered Content */}
-      <div className="relative z-10 max-w-4xl w-full px-8 text-center space-y-12">
+      {/* Centered Content - UI Layer */}
+      <div className="relative z-10 max-w-4xl w-full px-8 text-center space-y-12 pointer-events-none">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          className="space-y-6"
+          className="space-y-6 pointer-events-auto"
         >
           <div className="flex items-center justify-center gap-3">
             <span className="w-12 h-px bg-slate-900/10" />
@@ -56,14 +56,14 @@ export const Hero: React.FC = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.2, delay: 0.5 }}
-          className="space-y-10"
+          className="space-y-10 pointer-events-auto"
         >
           <p className="max-w-xl mx-auto text-lg md:text-xl text-slate-500 font-light leading-relaxed">
             Unleash the potential of a high-performance platform. 
             Experience the fusion of advanced tech and cinematic watercolor art.
           </p>
           
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pointer-events-auto">
             <button className="w-full sm:w-auto px-10 py-5 bg-slate-900 text-white rounded-2xl font-bold shadow-2xl shadow-slate-200 hover:bg-slate-800 transition-all hover:scale-105 active:scale-95 text-sm uppercase tracking-widest">
               Launch Console
             </button>
